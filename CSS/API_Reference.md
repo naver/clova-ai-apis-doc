@@ -22,7 +22,7 @@ speaker={string}&speed={integer}&text={string}
 |------------|---------|
 | speaker    | string  | 음성 합성에 사용할 목소리 종류 <ul><li>mijin : 한국어, 여성 음색</li> <li>jinho : 한국어, 남성 음색</li> <li>clara : 영어, 여성 음색</li> <li>matt : 영어, 남성 음색</li> <li>yuri : 일본어, 여성 음색</li><li>shinji : 일본어, 남성 음색</li> <li>meimei : 중국어, 여성 음색</li></ul> | 필수 |
 | speed      | integer | 음성 재생 속도. -5에서 5 사이의 정수 값이며, -5이면 0.5배 빠른 속도이고 5이면 0.5배 느린 속도입니다. 0이면 정상 속도의 목소리로 음성을 합성합니다.      | 필수 |
-| text       | string  | 음성 합성할 문장. UTF-8 인코딩된 텍스트만 지원합니다. | 필수 |
+| text       | string  | 음성 합성할 문장. UTF-8 인코딩된 텍스트만 지원합니다. CSR API는 최대 4KB 크기의 텍스트까지 음성 합성을 지원합니다. | 필수 |
 
 
 ## 응답 {#Response}
