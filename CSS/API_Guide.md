@@ -4,6 +4,4 @@
 
 {% include "./Using_API.md" %}
 
-{% include "./UX_Guideline.md" %}
-
-{% include "./Handle_Error.md" %}
+{% include "./API_Reference.md" %}

@@ -31,7 +31,7 @@ dependencies {
 ```
 <div class="note">
 <p><strong>Note!</strong></p>
-<p>네이버 OpenAPI는 Android SDK 버전 10 이상을 지원합니다. 따라서, <em>build.gradle</em> 파일의 <em>minSdkVersion</em> 값을 이에 맞게 설정해야 합니다. </p>
+<p>네이버 Open API는 Android SDK 버전 10 이상을 지원합니다. 따라서, <em>build.gradle</em> 파일의 <em>minSdkVersion</em> 값을 이에 맞게 설정해야 합니다. </p>
 </div>
 
 클라이언트는 "준비", "녹음", "중간결과 출력", "끝점 추출", "최종결과 출력"과 같은 일련의 이벤트 흐름을 수행합니다. 애플리케이션 개발자는 *SpeechRecognitioinListener* 인터페이스를 상속받아 해당 이벤트가 발생할 때 처리할 동작을 구현하면 됩니다.

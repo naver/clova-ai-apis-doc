@@ -21,7 +21,7 @@ unzip master.zip
 <div class="note">
 <p><strong>Note!</strong></p>
 <ul><li>iOS API를 제공하기 위해 Universal binary(Fat binary) 형태의 프레임워크를 제공하고 있습니다. 따라서 <strong>Build Setting</strong>에서 <strong>Enable Bitcode</strong> 옵션을 사용할 수 없으므로 <em>No</em>로 설정해야 합니다.</li>
-<li>네이버 OpenAPI는 iOS 버전 8 이상을 지원합니다. 따라서, <strong>Deployment Target</strong> 값을 이에 맞게 설정해야 합니다.</li>
+<li>네이버 Open API는 iOS 버전 8 이상을 지원합니다. 따라서, <strong>Deployment Target</strong> 값을 이에 맞게 설정해야 합니다.</li>
 </ul>
 </div>
 

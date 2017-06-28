@@ -25,7 +25,7 @@
  | ERROR_EXCEED_TIME_LIMIT  | 65 | 인증용 타임 스탬프(time stamp) 불량     |
  | ERROR_WRONG_SERVICE_TYPE | 66 | 올바른 서비스 타입(service type)이 아님.  |
  | ERROR_WRONG_LANGUAGE_TYPE | 67 | 올바른 언어 타입(language type)이 아님. |
- | ERROR_OPENAPI_AUTH       | 70 | OpenAPI 인증 오류. Client ID 또는 등록한 App 정보가 잘못되었을 때 발생합니다. |
+ | ERROR_OPENAPI_AUTH       | 70 | Open API 인증 오류. Client ID 또는 등록한 App 정보가 잘못되었을 때 발생합니다. |
  | ERROR_QUOTA_OVERFLOW     | 71 | 정해진 API 호출 제한량(quota)을 모두 소진함. |
 
 
