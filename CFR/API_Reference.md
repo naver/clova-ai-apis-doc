@@ -1,4 +1,4 @@
-# CFR API 레퍼런스
+# CFR API 레퍼런스 {#APIReference}
 CFR API는 다음과 같은 API를 제공합니다.
 
 * [유명인 얼굴 인식 API](#CelebrityAPI)

@@ -1,4 +1,4 @@
-# CSR API 레퍼런스
+# CSR API 레퍼런스 {#APIReference}
 CSR API는 HTTP 요청으로 텍스트를 입력받아 음성 합성한 후 이를 MP3 형식의 바이너리 데이터로 반환하는 REST API입니다. 여기에서는 CSR API에 대해 상세히 설명합니다.
 
 ## 기본 정보 {#BasicInfo}
