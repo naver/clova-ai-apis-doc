@@ -1,6 +1,6 @@
 # 사전 준비사항 {#Preparation}
 
-CSR API를 사용하려면 개발하려는 애플리케이션을 네이버 개발자 센터에 등록하고 사용할 API에 대한 권한을 설정해야 하며, API 사용 시 필요한 인증 정보를 획득해야 합니다. [애플리케이션 등록](https://developers.naver.com/docs/common/openapiguide/#/appregister.md)을 참고하여 다음과 같이 필요한 사항을 미리 준비합니다.
+CSR API를 사용하려면 개발하려는 애플리케이션을 네이버 개발자 센터에 등록해야 합니다. 이때, 사용할 API에 대한 권한을 설정해야 하며, API 사용 시 필요한 인증 정보를 획득해야 합니다. [애플리케이션 등록](https://developers.naver.com/docs/common/openapiguide/#/appregister.md)을 참고하여 다음과 같이 필요한 사항을 미리 준비합니다.
 
 ![](/CSR/Resources/Images/CSR_Register_App.png)
 

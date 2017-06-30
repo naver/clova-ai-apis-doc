@@ -27,7 +27,7 @@
 }
 
 .book-body .body-inner .page-wrapper .page-inner {
-	max-width: 80em;
+	max-width: 900em;
 }
 
 .book-summary .summary .divider {
@@ -35,6 +35,10 @@
 }
 
 .book-summary .summary>li:last-child {
+    display: none;
+}
+
+.book-body .navigation-next, .book-body .navigation-prev {
     display: none;
 }
 
