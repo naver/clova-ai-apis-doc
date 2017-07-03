@@ -30,6 +30,6 @@
 
 ## Clova AI APIs
 * [API 릴리즈 노트](README.md)
-  * [CSR API 릴리즈 노트](/ReleaseNotes/CSR.md)
-  * [CSS API 릴리즈 노트](/ReleaseNotes/CSS.md)
-  * [CFR API 릴리즈 노트](/ReleaseNotes/CFR.md)
+  * [CSR API](/ReleaseNotes/CSR.md)
+  * [CSS API](/ReleaseNotes/CSS.md)
+  * [CFR API](/ReleaseNotes/CFR.md)

@@ -6,9 +6,11 @@
 * 지원 아키텍처 추가 : arm, arm-v7만 지원하던 점을 개선하여 모든 아키텍쳐에 호환되도록 수정하였습니다.
 
 **Fixed**
+
 없음
 
 **Known Issues**
+
 없음
 
 ## 2017-01-25 - v1.1.2
@@ -16,9 +18,11 @@
 * 지원 언어 추가: 중국어, 일본어 추가
 
 **Fixed**
+
 없음
 
 **Known Issues**
+
 없음
 
 ## 2016-12-06 - v1.1.0
@@ -36,13 +40,16 @@
 * 기존에는 libs 파일을 복사하여 사용했지만, 이제부터는 android studio에서 gradle에 의존성을 추가하여 바로 SDK를 사용할 수 있도록 수정했습니다. 또한 사용성 개선을 위해 일부 메서드명과 형식을 변경하였습니다.
 
 **Fixed**
+
 없음
 
 **Known Issues**
+
 없음
 
 ## 2016-03-23 - v1.0.4
 **Added/Updated**
+
 없음
 
 **Fixed**
@@ -54,12 +61,14 @@
 
 ## 2016-03-04 - v1.0.3
 **Added/Updated**
+
 없음
 
 **Fixed**
 * JNI 라이브러리에 armeabi 뿐만 아니라 armeabi-v7a 추가
 
 **Known Issues**
+
 없음
 
 ## 2016-02-03 - v1.0.2
@@ -71,6 +80,7 @@
 * Fatal signal 11 (SIGSEGV) at 0xdeadbaad (code=1), thread 15107 (erspeech.client) 버그 수정
 
 **Known Issues**
+
 없음
 
 ## 2016-01-26 - v1.0.0
@@ -78,7 +88,9 @@
 * CSR API 정식 배포
 
 **Fixed**
+
 없음
 
 **Known Issues**
+
 없음
