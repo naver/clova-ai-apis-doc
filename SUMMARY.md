@@ -29,4 +29,7 @@
   * [오류 코드](/CFR/API_Guide.md#ErrorCode)
 
 ## Clova AI APIs
-* [문서 정보](README.md)
+* [API 릴리즈 노트](README.md)
+  * [CSR API 릴리즈 노트](/ReleaseNotes/CSR.md)
+  * [CSS API 릴리즈 노트](/ReleaseNotes/CSS.md)
+  * [CFR API 릴리즈 노트](/ReleaseNotes/CFR.md)
