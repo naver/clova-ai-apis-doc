@@ -28,7 +28,7 @@
   * [얼굴 감지 API](/CFR/API_Guide.md#FaceAPI)
   * [오류 코드](/CFR/API_Guide.md#ErrorCode)
 
-## Clova AI APIs
+## Release notes for Clova AI APIs
 * [API 릴리즈 노트](README.md)
   * [CSR API](/ReleaseNotes/CSR.md)
   * [CSS API](/ReleaseNotes/CSS.md)
