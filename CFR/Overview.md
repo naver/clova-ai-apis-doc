@@ -1,8 +1,2 @@
 # CFR API란? {#Overview}
-Clova Face Recognition API(이하 CFR API)는 이미지 데이터를 입력받은 후 얼굴 인식 결과를 JSON 형태로 반환합니다. CFR API는 이미지에 있는 얼굴 인식하여 분석 정보를 제공하는 얼굴 감지 API와 닮은 연예인을 알려주는 유명인 얼굴 인식 API를 제공합니다. 각 API는 다음과 같은 정보를 제공합니다.
-
-| 얼굴 감지 API             | 유명인 얼굴 인식 API        |
-|-------------------------|-------------------------|
-| <ul><li>감지된 얼굴의 수</li><li>감지된 각 얼굴을 분석한 정보<ul><li>감지된 각 얼굴의 좌표 및 크기</li><li>감지된 각 얼굴의 눈, 코, 입의 좌표</li><li>감지된 얼굴의 추정 성별 및 추정치</li><li>감지된 얼굴의 추정 나이 및 추정치</li><li>감지된 얼굴에서 분석된 감정</li><li>감지된 얼굴의 방향</li></ul></li></ul> | <ul><li>감지된 얼굴의 수</li><li>감지된 각 얼굴을 분석한 정보<ul><li>닮은 유명인 이름</li><li>일치율</li></ul></li></ul> |
-
-CFR API는 HTTP 기반의 REST API이며, 비로그인 Open API입니다.
+Clova Face Recognition API(이하 CFR API)는 이미지 데이터를 입력받은 후 얼굴 인식 결과를 JSON 형태로 반환합니다. CFR API는 이미지에 있는 얼굴 인식하여 분석 정보를 제공하는 얼굴 감지 API와 닮은 연예인을 알려주는 유명인 얼굴 인식 API를 제공합니다. CFR API는 HTTP 기반의 REST API이며, 비로그인 Open API입니다.
