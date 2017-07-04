@@ -1,6 +1,6 @@
-## CSR API 사용하기 {#UsingAPI}
+## CSS API 사용하기 {#UsingAPI}
 
-CSR API는 REST API이며, 음성 합성할 텍스트 데이터를 HTTP 통신으로 음성 합성 서버로 전달하면 됩니다. 음성 합성 서버가 제공하는 REST API의 URI는 다음과 같으며 POST 방식으로 연결을 시도해야 합니다.
+CSS API는 REST API이며, 음성 합성할 텍스트 데이터를 HTTP 통신으로 음성 합성 서버로 전달하면 됩니다. 음성 합성 서버가 제공하는 REST API의 URI는 다음과 같으며 POST 방식으로 연결을 시도해야 합니다.
 
 ```
 https://openapi.naver.com/v1/voice/tts.bin
@@ -17,7 +17,7 @@ X-Naver-Client-Id: {앱 등록 시 발급받은 Client ID}
 X-Naver-Client-Secret: {앱 등록 시 발급 받은 Client Secret}
 ```
 
-HTTP 요청 본문에는 음성 합성할 텍스트 뿐만 아니라 목소리 종류와 속도를 정의할 수 있습니다. 다음은 "만나서 반갑습니다."라는 텍스트를 일반적인 속도의 여성 목소리로 합성하도록 설정한 본문 예입니다. 자세한 설명은 [CSR API 레퍼런스](#APIReference)를 참조합니다.
+HTTP 요청 본문에는 음성 합성할 텍스트 뿐만 아니라 목소리 종류와 속도를 정의할 수 있습니다. 다음은 "만나서 반갑습니다."라는 텍스트를 일반적인 속도의 여성 목소리로 합성하도록 설정한 본문 예입니다. 자세한 설명은 [CSS API 레퍼런스](#APIReference)를 참조합니다.
 
 ```
 [HTTP Request Body]

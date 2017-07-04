@@ -1,6 +1,6 @@
 ## 구현 예제 {#Examples}
 
-다음은 각 언어별 CSR API 구현 예제입니다.
+다음은 각 언어별 CSS API 구현 예제입니다.
 * [Java](#Java)
 * [PHP](#PHP)
 * [Node.js](#Nodejs)
