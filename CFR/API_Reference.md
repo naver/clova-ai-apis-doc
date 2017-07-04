@@ -15,8 +15,8 @@ CFR API는 다음과 같은 API를 제공합니다.
 #### 기본 정보
 유명인 얼굴 인식 API의 요청 URI 및 요청에 필요한 헤더 정보는 다음과 같습니다.
 
-| 메서드 | 요청 URI                                       | 필요 헤더              |
-|------|-----------------------------------------------|----------------------|
+| 메서드   | 요청 URI                        | 필요 헤더                                     |
+|--------|--------------------------------|---------------------------------------------|
 | POST | https://openapi.naver.com/v1/vision/celebrity | <ul><li>X-Naver-Client-Id: <a href="#Preparation">사전 준비사항</a>에서 발급받은 Client ID</li><li>X-Naver-Client-Secret: <a href="#Preparation">사전 준비사항</a>에서 발급 받은 Client Secret</li></ul> |
 
 #### 요청 파라미터
