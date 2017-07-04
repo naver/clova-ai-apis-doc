@@ -72,6 +72,7 @@ public class APIExamTTS {
 
 ### PHP {#PHP}
 
+{% raw %}
 ```php
 // 네이버 음성합성 Open API 예제
 <?php
@@ -105,6 +106,7 @@ public class APIExamTTS {
   }
 ?>
 ```
+{% endraw %}
 
 ### Node.js {#Nodejs}
 

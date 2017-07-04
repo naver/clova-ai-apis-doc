@@ -4,9 +4,9 @@ CSS API는 HTTP 요청으로 텍스트를 입력받아 음성 합성한 후 이�
 ## 기본 정보 {#BasicInfo}
 CSS API의 요청 URI 및 요청에 필요한 헤더 정보는 다음과 같습니다.
 
-| 메서드 | 요청 URI                            | 필요 헤더                                     |
-|------|------------------------------------|---------------------------------------------|
-| POST | https://openapi.naver.com/v1/voice/tts.bin | <ul><li>X-Naver-Client-Id: <a href="#Preparation">사전 준비사항</a>에서 발급받은 Client ID</li><li>X-Naver-Client-Secret: <a href="#Preparation">사전 준비사항</a>에서 발급 받은 Client Secret</li></ul> |
+| 메서드   | 요청 URI                        | 필요 헤더                                     |
+|--------|--------------------------------|---------------------------------------------|
+| POST   | https://openapi.naver.com/v1/voice/tts.bin | <ul><li>X-Naver-Client-Id: <a href="#Preparation">사전 준비사항</a>에서 발급받은 Client ID</li><li>X-Naver-Client-Secret: <a href="#Preparation">사전 준비사항</a>에서 발급 받은 Client Secret</li></ul> |
 
 ## 요청 파라미터 {#RequestParameter}
 CSS API에 필요한 요청 헤더는 본문에 입력하며 본문에 다음과 같이 파라미터를 작성해야 합니다.
