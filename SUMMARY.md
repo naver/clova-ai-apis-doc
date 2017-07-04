@@ -8,6 +8,7 @@
   * [iOS API 사용하기](/CSR/API_Guide.md#UsingiOSAPI)
 * [UX 고려사항](/CSR/API_Guide.md#UXGuideline)
 * [오류 처리](/CSR/API_Guide.md#HandleError)
+* [구현 예제](/CSR/Examples.md)
 
 ## Clova Speech Synthesis (CSS)
 * [CSS API란?](/CSS/API_Guide.md#Overview)
@@ -18,6 +19,7 @@
   * [요청 파라미터](/CSS/API_Guide.md#RequestParameter)
   * [응답](/CSS/API_Guide.md#Response)
   * [오류 코드](/CSS/API_Guide.md#ErrorCode)
+* [구현 예제](/CSS/Examples.md)
 
 ## Clova Face Recognition (CFR)
 * [CFR API란?](/CFR/API_Guide.md#Overview)
@@ -27,6 +29,7 @@
   * [유명인 얼굴 인식 API](/CFR/API_Guide.md#CelebrityAPI)
   * [얼굴 감지 API](/CFR/API_Guide.md#FaceAPI)
   * [오류 코드](/CFR/API_Guide.md#ErrorCode)
+* [구현 예제](/CFR/Examples.md)
 
 ## Release notes for Clova AI APIs
 * [API 릴리즈 노트](README.md)

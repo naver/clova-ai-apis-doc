@@ -7,3 +7,5 @@
 {% include "./UX_Guideline.md" %}
 
 {% include "./Handle_Error.md" %}
+
+{% include "./Examples.md" %}

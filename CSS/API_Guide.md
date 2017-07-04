@@ -5,3 +5,5 @@
 {% include "./Using_API.md" %}
 
 {% include "./API_Reference.md" %}
+
+{% include "./Examples.md" %}

@@ -1,47 +1,10 @@
-## Android API 사용하기 {#UsingAndroidAPI}
+## 구현 예제 {#Examples}
 
-Android API를 사용하려면 다음 절차를 따릅니다.
+다음은 각 플랫폼별 CSR API 구현 예제입니다.
+* [Android 구현 예제](#AndroidExample)
+* [iOS 구현 예제](#iOSExample)
 
-1. 다음 구문을 *app/build.gradle* 파일에 추가합니다.
-```java
-repositories {
-    jcenter()
-}
-dependencies {
-    compile 'com.naver.speech.clientapi:naverspeech-sdk-android:1.1.1'
-}
-```
-2. 다음과 같이 Android Manifest 파일(AndroidManifest.xml)을 설정합니다.
-  * 패키지 이름 : *manifest* 요소의 *package* 속성 값이 [사전 준비사항](#Preparation)에서 등록한 *안드로이드 앱 패키지 이름*과 같아야 합니다.
-  * 권한 설정 : 사용자의 음성 입력을 마이크를 통해 녹음해야 하고 녹음된 데이터를 서버로 전송해야 합니다. 따라서, *android.permission.INTERNET*와 *android.permission.RECORD_AUDIO*에 대한 권한이 반드시 필요합니다.
-```xml
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-   package="com.naver.naverspeech.client"
-   android:versionCode="1" android:versionName="1.0" >
-<uses-permission android:name="android.permission.INTERNET" />
-<uses-permission android:name="android.permission.RECORD_AUDIO" />
-<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-```
-3. (선택) proguard-rules.pro 파일에 다음을 추가합니다. 아래 코드는 앱을 보다 가볍고 안전하게 만들어줍니다.
-```java
--keep class com.naver.speech.clientapi.SpeechRecognizer {
-      protected private *;
-}
-```
-<div class="note">
-<p><strong>Note!</strong></p>
-<p>네이버 Open API는 Android SDK 버전 10 이상을 지원합니다. 따라서, <em>build.gradle</em> 파일의 <em>minSdkVersion</em> 값을 이에 맞게 설정해야 합니다. </p>
-</div>
-
-클라이언트는 "준비", "녹음", "중간결과 출력", "끝점 추출", "최종결과 출력"과 같은 일련의 이벤트 흐름을 수행합니다. 애플리케이션 개발자는 *SpeechRecognitioinListener* 인터페이스를 상속받아 해당 이벤트가 발생할 때 처리할 동작을 구현하면 됩니다.
-
-![](/CSR/Resources/Images/CSR_State_Diagram_for_Android.png)
-
-<div class="note">
-<p><strong>Note!</strong></p>
-<p>API에 대한 자세한 설명은 <a href="http://naver.github.io/naverspeech-sdk-android/">http://naver.github.io/naverspeech-sdk-android</a>를 참고합니다. </p>
-</div>
+### Android 구현 예제 {#AndroidExample}
 
 다음은 Android에서 CSR API를 사용한 예제 코드입니다.
 * CSR API - Android용 예제
@@ -235,5 +198,135 @@ class NaverRecognizer implements SpeechRecognitionListener {
 		Message msg = Message.obtain(mHandler, R.id.endPointDetectTypeSelected, epdType);
 		msg.sendToTarget();
 	}
+}
+```
+
+### iOS 구현 예제 {#iOSExample}
+다음은 iOS에서 CSR API를 사용한 예제 코드입니다.
+* CSR API - iOS용 예제
+* 예제 코드 저장소 : https://github.com/naver/naverspeech-sdk-ios
+
+```objectivec
+import UIKit
+import NaverSpeech
+import Common
+let ClientID = "YOUR_CLIENT_ID"
+class AutoViewController: UIViewController {
+    required init?(coder aDecoder: NSCoder) { // NSKRecognizer를 초기화 하는데 필요한 NSKRecognizerConfiguration을 생성
+        let configuration = NSKRecognizerConfiguration(clientID: ClientID)
+        configuration?.canQuestionDetected = true
+        self.speechRecognizer = NSKRecognizer(configuration: configuration)
+        super.init(coder: aDecoder)
+        self.speechRecognizer.delegate = self
+    }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.setupLanguagePicker()
+    }
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        if self.isViewLoaded && self.view.window == nil {
+            self.view = nil
+        }
+    }
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        let x = languagePickerButton.frame.minX
+        let y = languagePickerButton.frame.maxY
+        self.pickerView.frame = CGRect.init(x: x, y: y, width: languagePickerButton.bounds.size.width, height: self.pickerView.bounds.size.height)
+    }
+    @IBAction func languagePickerButtonTapped(_ sender: Any) {
+        self.pickerView.isHidden = false
+    }
+    @IBAction func recognitionButtonTapped(_ sender: Any) { // 버튼 누르면 음성인식 시작
+        if self.speechRecognizer.isRunning {
+            self.speechRecognizer.stop()
+        } else {
+            self.speechRecognizer.start(with: self.languages.selectedLanguage)
+            self.recognitionButton.isEnabled = false
+            self.statusLabel.text = "Connecting......"
+        }
+    }
+    @IBOutlet weak var languagePickerButton: UIButton!
+    @IBOutlet weak var recognitionResultLabel: UILabel!
+    @IBOutlet weak var recognitionButton: UIButton!
+    @IBOutlet weak var statusLabel: UILabel!
+    fileprivate let speechRecognizer: NSKRecognizer
+    fileprivate let languages = Languages()
+    fileprivate let pickerView = UIPickerView()
+}
+
+extension AutoViewController: NSKRecognizerDelegate { //NSKRecognizerDelegate protocol 구현
+
+    public func recognizerDidEnterReady(_ aRecognizer: NSKRecognizer!) {
+        print("Event occurred: Ready")
+        self.statusLabel.text = "Connected"
+        self.recognitionResultLabel.text = "Recognizing......"
+        self.setRecognitionButtonTitle(withText: "Stop", color: .red)
+        self.recognitionButton.isEnabled = true
+    }
+    public func recognizerDidDetectEndPoint(_ aRecognizer: NSKRecognizer!) {
+        print("Event occurred: End point detected")
+    }
+    public func recognizerDidEnterInactive(_ aRecognizer: NSKRecognizer!) {
+        print("Event occurred: Inactive")
+        self.setRecognitionButtonTitle(withText: "Record", color: .blue)
+        self.recognitionButton.isEnabled = true
+        self.statusLabel.text = ""
+    }
+    public func recognizer(_ aRecognizer: NSKRecognizer!, didRecordSpeechData aSpeechData: Data!) {
+        print("Record speech data, data size: \(aSpeechData.count)")
+    }
+    public func recognizer(_ aRecognizer: NSKRecognizer!, didReceivePartialResult aResult: String!) {
+        print("Partial result: \(aResult)")
+        self.recognitionResultLabel.text = aResult
+    }
+    public func recognizer(_ aRecognizer: NSKRecognizer!, didReceiveError aError: Error!) {
+        print("Error: \(aError)")
+        self.setRecognitionButtonTitle(withText: "Record", color: .blue)
+        self.recognitionButton.isEnabled = true
+    }
+    public func recognizer(_ aRecognizer: NSKRecognizer!, didReceive aResult: NSKRecognizedResult!) {
+        print("Final result: \(aResult)")
+        if let result = aResult.results.first as? String {
+            self.recognitionResultLabel.text = "Result: " + result
+        }
+    }
+}
+extension AutoViewController: UIPickerViewDelegate, UIPickerViewDataSource {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return self.languages.count
+    }
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return languages.languageString(at: row)
+    }
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        languages.selectLanguage(at: row)
+        languagePickerButton.setTitle(languages.selectedLanguageString, for: .normal)
+        self.pickerView.isHidden = true
+        if self.speechRecognizer.isRunning { //음성인식 중 언어를 변경하게 되면 음성인식을 즉시 중지(cancel)
+            self.speechRecognizer.cancel()
+            self.recognitionResultLabel.text = "Canceled"
+            self.setRecognitionButtonTitle(withText: "Record", color: .blue)
+            self.recognitionButton.isEnabled = true
+        }
+    }
+}
+fileprivate extension AutoViewController {
+    func setupLanguagePicker() {
+        self.view.addSubview(self.pickerView)
+        self.pickerView.dataSource = self
+        self.pickerView.delegate = self
+        self.pickerView.showsSelectionIndicator = true
+        self.pickerView.backgroundColor = UIColor.white
+        self.pickerView.isHidden = true
+    }
+    func setRecognitionButtonTitle(withText text: String, color: UIColor) {
+        self.recognitionButton.setTitle(text, for: .normal)
+        self.recognitionButton.setTitleColor(color, for: .normal)
+    }
 }
 ```

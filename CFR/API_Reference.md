@@ -1,25 +1,25 @@
-# CFR API 레퍼런스 {#APIReference}
+## CFR API 레퍼런스 {#APIReference}
 CFR API는 다음과 같은 API를 제공합니다.
 
 * [유명인 얼굴 인식 API](#CelebrityAPI)
 * [얼굴 감지 API](#FaceAPI)
 
-## 유명인 얼굴 인식 API {#CelebrityAPI}
-입력받은 이미지로부터 얼굴을 감지하고 감지한 얼굴이 어떤 유명인가 닮았는지 분석하여 그 결과를 반환하는 REST API입니다. 이미지에서 다음과 같은 정보를 분석합니다.
+### 유명인 얼굴 인식 API {#CelebrityAPI}
+입력받은 이미지로부터 얼굴을 감지하고 감지한 얼굴이 어떤 유명인과 닮았는지 분석하여 그 결과를 반환하는 REST API입니다. 이미지에서 다음과 같은 정보를 분석합니다.
 
 * 감지된 얼굴의 수
 * 감지된 각 얼굴을 분석한 정보
   * 닮은 유명인 이름
   * 해당 유명인을 닮은 정도
 
-### 기본 정보
+#### 기본 정보
 유명인 얼굴 인식 API의 요청 URI 및 요청에 필요한 헤더 정보는 다음과 같습니다.
 
 | 메서드 | 요청 URI                                       | 필요 헤더              |
 |------|-----------------------------------------------|----------------------|
 | POST | https://openapi.naver.com/v1/vision/celebrity | <ul><li>X-Naver-Client-Id: <a href="#Preparation">사전 준비사항</a>에서 발급받은 Client ID</li><li>X-Naver-Client-Secret: <a href="#Preparation">사전 준비사항</a>에서 발급 받은 Client Secret</li></ul> |
 
-### 요청 파라미터
+#### 요청 파라미터
 Multipart 메시지에 이름이 *image*라는 메시지로 이미지의 바이너리 데이터를 전달해야 합니다. **최대 2MB의 이미지 데이터를 지원**합니다. 다음은 헤더를 포함한 HTTP 요청 예제입니다.
 
 ```
@@ -39,7 +39,7 @@ Content-Type: image/jpeg
 --{boundary-text}--
 ```
 
-### 응답
+#### 응답
 유명인 얼굴 인식 API는 분석한 결과를 JSON 형식의 데이터로 반환합니다. JSON 응답의 각 필드에 대한 설명은 다음과 같습니다.
 
 | 필드 이름                      | 데이터 타입     | 설명                                                |
@@ -89,7 +89,7 @@ Content-Type: image/jpeg
 }
 ```
 
-## 얼굴 감지 API {#FaceAPI}
+### 얼굴 감지 API {#FaceAPI}
 입력받은 이미지로부터 얼굴을 감지하고 입력된 이미지에서 얼마나 많은 얼굴이 감지되었고 각 얼굴이 어디에 어떤 크기로 위치하며 어떤 모습을 하고 있는지 반환하는 REST API입니다. 이미지에서 다음과 같은 정보를 분석합니다.
 
 * 감지된 얼굴의 수
@@ -101,14 +101,14 @@ Content-Type: image/jpeg
   * 감지된 얼굴에서 분석된 감정
   * 감지된 얼굴의 방향
 
-### 기본 정보
+#### 기본 정보
 얼굴 감지 API의 요청 URI 및 요청에 필요한 헤더 정보는 다음과 같습니다.
 
 | 메서드 | 요청 URI                                       | 필요 헤더              |
 |------|-----------------------------------------------|----------------------|
 | POST | https://openapi.naver.com/v1/vision/face | <ul><li>X-Naver-Client-Id: <a href="#Preparation">사전 준비사항</a>에서 발급받은 Client ID</li><li>X-Naver-Client-Secret: <a href="#Preparation">사전 준비사항</a>에서 발급 받은 Client Secret</li></ul> |
 
-### 요청 파라미터
+#### 요청 파라미터
 Multipart 메시지에 이름이 *image*라는 메시지로 이미지의 바이너리 데이터를 전달해야 합니다. **최대 2MB의 이미지 데이터를 지원**합니다. 다음은 헤더를 포함한 HTTP 요청 예제입니다.
 
 ```
@@ -128,7 +128,7 @@ Content-Type: image/jpeg
 --{boundary-text}--
 ```
 
-### 응답
+#### 응답
 얼굴 감지 API는 분석한 결과를 JSON 형식의 데이터로 반환합니다. JSON 응답의 각 필드에 대한 설명은 다음과 같습니다.
 
 | 필드 이름                     | 데이터 타입     | 설명                                                |
@@ -154,7 +154,7 @@ Content-Type: image/jpeg
 | faces[].emotion.value       | string       | 인식된 감정. "smile"과 같이 얼굴의 표정이나 감정을 나타내는 문자열입니다. 다음과 같은 값을 가집니다. <ul><li>angry</li><li>disgust</li><li>fear</li><li>laugh</li><li>neutral</li><li>sad</li><li>suprise</li><li>smile</li><li>talking</li></ul> |
 | faces[].emotion.confidence  | number       | 인식된 감정을 확신하는 정도. 0에서 1사이의 실수로 표현됩니다. 1에 가까울수록 높은 확신을 나타냅니다. |
 | faces[].pose                | object       | 감지된 얼굴이 어떤 포즈인지 추정한 정보를 가지는 객체           |
-| faces[].pose.value          | string       | 인식된 얼굴의 포즈. "frontal_face"와 같이 얼굴의 방향을 나타내는 문자열입니다. 다음과 같은 값을 가집니다. <ul><li>part_face</li><li>false_face</li><li>sunglasses</li><li>frontal_face</li><li>left_face</li><li>right_face</li><li>ratate_face</li></ul> |
+| faces[].pose.value          | string       | 인식된 얼굴의 포즈. "frontal_face"와 같이 얼굴의 방향을 나타내는 문자열입니다. 다음과 같은 값을 가집니다. <ul><li>part_face</li><li>false_face</li><li>sunglasses</li><li>frontal_face</li><li>left_face</li><li>right_face</li><li>rotate_face</li></ul> |
 | faces[].pose.confidence     | number       | 인식된 얼굴의 방향을 확신하는 정도. 0에서 1사이의 실수로 표현됩니다. 1에 가까울수록 높은 확신을 나타냅니다. |
 
 
@@ -230,7 +230,7 @@ Content-Type: image/jpeg
  }
 ```
 
-## 오류 코드 {#ErrorCode}
+### 오류 코드 {#ErrorCode}
 CFR API가 발생시킬 수 있는 오류 코드는 다음과 같습니다.
 
 | 오류 코드 | HTTP 응답 코드 | 오류 메시지                              | 설명                                                |
@@ -248,8 +248,8 @@ CFR API가 발생시킬 수 있는 오류 코드는 다음과 같습니다.
 | ER92    | 500         | Failed to generate valid json string.  | 서버에서 유효한 형식의 JSON 데이터를 결과로 생성하지 못했습니다. |
 | ER99    | 500         | Internal server error.                 | 내부 서버 오류입니다. 포럼에 문의하시면 신속히 조치하겠습니다.    |
 
-## Shared Object {#placeObject}
-CSR API는 HTTP 응답의 JSON 데이터에 감지한 얼굴 및 얼굴의 부위를 표시하기 위해 다음과 같이 place 객체를 공유하여 사용합니다. 각 필드는 선택적이며, 크기 정보를 나타낼 때와 위치 정보를 나타낼 때 선택적으로 사용될 수 있습니다.
+### Shared Object {#placeObject}
+CFR API는 HTTP 응답의 JSON 데이터에 감지한 얼굴 및 얼굴의 부위를 표시하기 위해 다음과 같이 place 객체를 공유하여 사용합니다. 각 필드는 선택적이며, 크기 정보를 나타낼 때와 위치 정보를 나타낼 때 선택적으로 사용될 수 있습니다.
 
 | 필드 이름  | 데이터 타입 | 설명                                 | 필수 여부 |
 |----------|--------|---------------------------------------|---------|
