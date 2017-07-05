@@ -20,7 +20,7 @@ speaker={string}&speed={integer}&text={string}
 
 | 파라미터 이름 | 타입     | 설명                                                       | 필수 여부 |
 |------------|---------|----------------------------------------------------------|---------|
-| speaker    | string  | 음성 합성에 사용할 목소리 종류 <ul><li>mijin : 한국어, 여성 음색</li> <li>jinho : 한국어, 남성 음색</li> <li>clara : 영어, 여성 음색</li> <li>matt : 영어, 남성 음색</li> <li>yuri : 일본어, 여성 음색</li><li>shinji : 일본어, 남성 음색</li> <li>meimei : 중국어, 여성 음색</li></ul> | 필수 |
+| speaker    | string  | 음성 합성에 사용할 목소리 종류 <ul><li>mijin : 한국어, 여성 음색</li> <li>jinho : 한국어, 남성 음색</li> <li>clara : 영어, 여성 음색</li> <li>matt : 영어, 남성 음색</li> <li>yuri : 일본어, 여성 음색</li><li>shinji : 일본어, 남성 음색</li><li>meimei : 중국어, 여성 음색</li><li>liangliang : 중국어, 남성 음색</li></ul> | 필수 |
 | speed      | integer | 음성 재생 속도. -5에서 5 사이의 정수 값이며, -5이면 0.5배 빠른 속도이고 5이면 0.5배 느린 속도입니다. 0이면 정상 속도의 목소리로 음성을 합성합니다.      | 필수 |
 | text       | string  | 음성 합성할 문장. UTF-8 인코딩된 텍스트만 지원합니다. CSS API는 최대 4KB 크기의 텍스트까지 음성 합성을 지원합니다. | 필수 |
 
@@ -52,5 +52,5 @@ CSS API가 발생시킬 수 있는 오류 코드는 다음과 같습니다.
 | VS03    | 400         | speed parameter is needed.        | speed 파라미터가 누락되었습니다.                             |
 | VS04    | 400         | Unsupported speed.                | speed 파라미터에 지원하지 않는 값이 입력된 경우 발생합니다.        |
 | VS05    | 400         | text parameter is needed.         | text 파라미터가 누락되었습니다.                              |
-| VS06    | 400         | text parameter exceeds max bytes. | text 파라미터의 최대 허용 글자 수를 초과했습니다.                |
+| VS06    | 400         | text parameter exceeds max bytes. | text 파라미터의 최대 용량을 초과했습니다.                |
 | VS99    | 500         | Internal server error             | 서버 내부 오류가 발생했습니다. 포럼에 문의하시면 신속히 조치하겠습니다. |

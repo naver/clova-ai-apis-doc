@@ -13,7 +13,7 @@
  | ERROR_AUDIO_FINALIZE     | 21 | 오디오 자원 해제 오류                   |
  | ERROR_AUDIO_RECORD       | 22 | 음성 입력(녹음) 오류. 오디오 사용 권한이 있는지 확인합니다. |
  | ERROR_SECURITY           | 30 | 인증 권한 오류                        |
- | ERROR_INVALID_RESULT     | 40 | 인실 결과 오류                        |
+ | ERROR_INVALID_RESULT     | 40 | 인식 결과 오류                        |
  | ERROR_TIMEOUT            | 41 | 일정 시간 이상 서버로 음성을 전송하지 못하거나, 인식 결과를 받지 못함. |
  | ERROR_NO_CLIENT_RUNNING  | 42 | 클라이언트가 음성 인식을 수행하지 않는 상황에서 특정 음성 인식 관련 이벤트가 감지됨. |
  | ERROR_UNKNOWN_EVENT      | 50 | 클라이언트 내부에 규정되어 있지 않은 이벤트가 감지됨. |
@@ -25,7 +25,7 @@
  | ERROR_EXCEED_TIME_LIMIT  | 65 | 인증용 타임 스탬프(time stamp) 불량     |
  | ERROR_WRONG_SERVICE_TYPE | 66 | 올바른 서비스 타입(service type)이 아님.  |
  | ERROR_WRONG_LANGUAGE_TYPE | 67 | 올바른 언어 타입(language type)이 아님. |
- | ERROR_OPENAPI_AUTH       | 70 | Open API 인증 오류. Client ID 또는 등록한 App 정보가 잘못되었을 때 발생합니다. |
+ | ERROR_OPENAPI_AUTH       | 70 | Open API 인증 오류. Client ID와 등록된 package 이름(Android) 또는 Bundle ID 정보(iOS)가 잘못되었을 때 발생합니다. |
  | ERROR_QUOTA_OVERFLOW     | 71 | 정해진 API 호출 제한량(quota)을 모두 소진함. |
 
 
