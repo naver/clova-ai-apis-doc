@@ -238,6 +238,7 @@ CFR API가 발생시킬 수 있는 오류 코드는 다음과 같습니다.
 | ER01    | 400         | image parameter is needed.             | image 파라미터가 누락되었습니다.                          |
 | ER02    | 400         | Failed to receive image content.       | 이미지 데이터를 수신하는데 실패했습니다.                     |
 | ER03    | 400         | Bad reqeust.                           | 잘못된 요청을 수신했습니다.                               |
+| ER04    | 400         | Image size is too large.               | 이미지의 크기가 2MB를 넘었습니다.                         |
 | ER11    | 400         | Abnormal image format.                 | 인식할 수 없는 이미지 데이터가 입력되었습니다.                |
 | ER12    | 400         | Abnormal image width v.s height ratio. | 이미지의 너비가 높이의 4배 이상입니다.                      |
 | ER13    | 400         | Image width is to small.               | 이미지의 너비가 50 픽셀보다 작습니다.                      |
