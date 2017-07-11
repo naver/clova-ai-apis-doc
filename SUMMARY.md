@@ -31,7 +31,7 @@
   * [오류 코드](/CFR/API_Guide.md#ErrorCode)
 * [구현 예제](/CFR/API_Guide.md#Examples)
 
-## Release notes for Clova AI APIs
+## Release notes
 * [API 릴리즈 노트](README.md)
   * [CSR API](/ReleaseNotes/CSR.md)
   * [CSS API](/ReleaseNotes/CSS.md)
