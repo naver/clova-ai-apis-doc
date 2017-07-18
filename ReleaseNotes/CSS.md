@@ -2,13 +2,13 @@
 이 페이지는 CSS API의 릴리즈 노트를 제공합니다.
 
 ## 2016-01-26 - v1
-**Added/Updated**
+### Added/Updated
 * CSR API 정식 배포
 
-**Fixed**
+### Fixed
 
 없음
 
-**Known Issues**
+### Known Issues
 
 없음

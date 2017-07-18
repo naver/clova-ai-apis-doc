@@ -2,31 +2,31 @@
 이 페이지는 CSR API의 릴리즈 노트를 제공합니다.
 
 ## 2017-05-26 - v1.1.3
-**Added/Updated**
+### Added/Updated
 * 지원 아키텍처 추가 : arm, arm-v7만 지원하던 점을 개선하여 모든 아키텍쳐에 호환되도록 수정하였습니다.
 
-**Fixed**
+### Fixed
 
 없음
 
-**Known Issues**
+### Known Issues
 
 없음
 
 ## 2017-01-25 - v1.1.2
-**Added/Updated**
+### Added/Updated
 * 지원 언어 추가: 중국어, 일본어 추가
 
-**Fixed**
+### Fixed
 
 없음
 
-**Known Issues**
+### Known Issues
 
 없음
 
 ## 2016-12-06 - v1.1.0
-**Added/Updated**
+### Added/Updated
 * [iOS 버전 openAPI](https://github.com/naver/naverspeech-sdk-ios) 출시
 * 끝점 추출(Endpoint detection) 방식 추가
   * 기존에는 발성을 멈추면 자동으로 인식 결과를 반환해주었습니다. 이는 발성의 끝점 추출(Endpoint detection)을 서버에서 자동으로 수행하는 방식입니다. 이번 업데이트에서는, 끝점 추출 동작에 대해 두 가지 방식을 새롭게 추가했습니다. 아래는 기존 방식을 포함한 세 가지 방식에 대한 설명이며, 자세한 사용 방법은 [Android 예제코드](https://github.com/naver/naverspeech-sdk-android) 또는 [iOS 예제코드](https://github.com/naver/naverspeech-sdk-ios)를 참고하시기 바랍니다.
@@ -39,58 +39,58 @@
 * Android 버전 openAPI 사용성 개선
 * 기존에는 libs 파일을 복사하여 사용했지만, 이제부터는 android studio에서 gradle에 의존성을 추가하여 바로 SDK를 사용할 수 있도록 수정했습니다. 또한 사용성 개선을 위해 일부 메서드명과 형식을 변경하였습니다.
 
-**Fixed**
+### Fixed
 
 없음
 
-**Known Issues**
+### Known Issues
 
 없음
 
 ## 2016-03-23 - v1.0.4
-**Added/Updated**
+### Added/Updated
 
 없음
 
-**Fixed**
+### Fixed
 * package 명이 어느 정도 길어질 경우 잘려 인증오류(70) 발생하는 문제 수정, package 명의 길이가 256bytes 이하면 문제 없음.
 * eclipse에서 Javadoc을 볼 경우 한글이 깨지는 문제 수정.
 
-**Known Issues**
+### Known Issues
 없음
 
 ## 2016-03-04 - v1.0.3
-**Added/Updated**
+### Added/Updated
 
 없음
 
-**Fixed**
+### Fixed
 * JNI 라이브러리에 armeabi 뿐만 아니라 armeabi-v7a 추가
 
-**Known Issues**
+### Known Issues
 
 없음
 
 ## 2016-02-03 - v1.0.2
-**Added/Updated**
+### Added/Updated
 * SpeechRecognizer 클래스 생성자에서 SpeechRecognitionException 예외가 발생할 수 있습니다.
 * Android 2.3.3부터 SDK를 사용할 수 있도록 수정했습니다.
 
-**Fixed**
+### Fixed
 * Fatal signal 11 (SIGSEGV) at 0xdeadbaad (code=1), thread 15107 (erspeech.client) 버그 수정
 
-**Known Issues**
+### Known Issues
 
 없음
 
 ## 2016-01-26 - v1.0.0
-**Added/Updated**
+### Added/Updated
 * CSR API 정식 배포
 
-**Fixed**
+### Fixed
 
 없음
 
-**Known Issues**
+### Known Issues
 
 없음
