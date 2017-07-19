@@ -1,6 +1,6 @@
 # Summary
 
-## Clova Speech Recognition (CSR)
+## Clova Speech Recognition
 * [CSR API란?](/CSR/API_Guide.md#Overivew)
 * [사전 준비사항](/CSR/API_Guide.md#Preparation)
 * [CSR API 사용하기](/CSR/API_Guide.md#UsingAPI)
@@ -12,7 +12,7 @@
   * [Android 예제](/CSR/API_Guide.md#AndroidExample)
   * [iOS 예제](/CSR/API_Guide.md#iOSExample)
 
-## Clova Speech Synthesis (CSS)
+## Clova Speech Synthesis
 * [CSS API란?](/CSS/API_Guide.md#Overview)
 * [사전 준비사항](/CSS/API_Guide.md#Preparation)
 * [CSS API 사용하기](/CSS/API_Guide.md#UsingAPI)
@@ -29,7 +29,7 @@
   * [C#](/CSS/API_Guide.md#Csharp)
   * [cURL](/CSS/API_Guide.md#cURL)
 
-## Clova Face Recognition (CFR)
+## Clova Face Recognition
 * [CFR API란?](/CFR/API_Guide.md#Overview)
 * [사전 준비사항](/CFR/API_Guide.md#Preparation)
 * [CFR API 사용하기](/CFR/API_Guide.md#UsingAPI)
