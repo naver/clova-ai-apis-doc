@@ -249,7 +249,7 @@ CFR API가 발생시킬 수 있는 오류 코드는 다음과 같습니다.
 | ER92    | 500         | Failed to generate valid json string.  | 서버에서 유효한 형식의 JSON 데이터를 결과로 생성하지 못했습니다. |
 | ER99    | 500         | Internal server error.                 | 내부 서버 오류입니다. 포럼에 문의하시면 신속히 조치하겠습니다.    |
 
-### Shared Object {#placeObject}
+### Place object {#placeObject}
 CFR API는 HTTP 응답의 JSON 데이터에 감지한 얼굴 및 얼굴의 부위를 표시하기 위해 다음과 같이 place 객체를 공유하여 사용합니다. 각 필드는 선택적이며, 크기 정보를 나타낼 때와 위치 정보를 나타낼 때 선택적으로 사용될 수 있습니다.
 
 | 필드 이름  | 데이터 타입 | 설명                                 | 필수 여부 |
