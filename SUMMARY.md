@@ -38,11 +38,11 @@
   * [얼굴 감지 API](/CFR/API_Guide.md#FaceAPI)
   * [오류 코드](/CFR/API_Guide.md#ErrorCode)
 * [구현 예제](/CFR/API_Guide.md#Examples)
-  * [Java](/CFS/API_Guide.md#Java)
-  * [PHP](/CFS/API_Guide.md#PHP)
-  * [Node.js](/CFS/API_Guide.md#Nodejs)
-  * [Python](/CFS/API_Guide.md#Python)
-  * [C#](/CFS/API_Guide.md#Csharp)
+  * [Java](/CFR/API_Guide.md#Java)
+  * [PHP](/CFR/API_Guide.md#PHP)
+  * [Node.js](/CFR/API_Guide.md#Nodejs)
+  * [Python](/CFR/API_Guide.md#Python)
+  * [C#](/CFR/API_Guide.md#Csharp)
 
 ## Release notes
 * [API 릴리즈 노트](README.md)
