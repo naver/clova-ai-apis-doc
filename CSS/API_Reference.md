@@ -1,14 +1,14 @@
-# CSS API 레퍼런스 {#APIReference}
+## CSS API 레퍼런스 {#APIReference}
 CSS API는 HTTP 요청으로 텍스트를 입력받아 음성 합성한 후 이를 MP3 형식의 바이너리 데이터로 반환하는 REST API입니다. 여기에서는 CSS API에 대해 상세히 설명합니다.
 
-## 기본 정보 {#BasicInfo}
+### 기본 정보 {#BasicInfo}
 CSS API의 요청 URI 및 요청에 필요한 헤더 정보는 다음과 같습니다.
 
 | 메서드   | 요청 URI                        | 필요 헤더                                     |
 |--------|--------------------------------|---------------------------------------------|
 | POST   | https://openapi.naver.com/v1/voice/tts.bin | <ul><li>X-Naver-Client-Id: <a href="#Preparation">사전 준비사항</a>에서 발급받은 Client ID</li><li>X-Naver-Client-Secret: <a href="#Preparation">사전 준비사항</a>에서 발급 받은 Client Secret</li></ul> |
 
-## 요청 파라미터 {#RequestParameter}
+### 요청 파라미터 {#RequestParameter}
 CSS API에 필요한 요청 헤더는 본문에 입력하며 본문에 다음과 같이 파라미터를 작성해야 합니다.
 
 ```
@@ -25,7 +25,7 @@ speaker={string}&speed={integer}&text={string}
 | text       | string  | 음성 합성할 문장. UTF-8 인코딩된 텍스트만 지원합니다. CSS API는 최대 5000자의 텍스트까지 음성 합성을 지원합니다. | 필수 |
 
 
-## 응답 {#Response}
+### 응답 {#Response}
 CSS API는 합성한 음성 데이터를 MP3 형식의 바이너리 데이터로 반환합니다. 다음은 HTTP 응답 예입니다.
 ```
 [HTTP Response Header]
@@ -42,7 +42,7 @@ X-QUOTA: 10
 {MP3 형식의 바이너리 데이터}
 ```
 
-## 오류 코드 {#ErrorCode}
+### 오류 코드 {#ErrorCode}
 CSS API가 발생시킬 수 있는 오류 코드는 다음과 같습니다.
 
 | 오류 코드 | HTTP 응답 코드 | 오류 메시지                         | 설명                                                   |

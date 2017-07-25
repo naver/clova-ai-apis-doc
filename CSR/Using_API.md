@@ -1,10 +1,10 @@
-# API 사용하기 {#UsingAPI}
+## API 사용하기 {#UsingAPI}
 CSR API는 Android용과 iOS용 SDK를 통해 제공되고 있습니다. 여기에서는 각 플랫폼별 CSR API를 사용하는 방법에 대해 설명합니다.
 
 * [Andorid API 사용하기](#UsingAndroidAPI)
 * [iOS API 사용하기](#UsingiOSAPI)
 
-## Android API 사용하기 {#UsingAndroidAPI}
+### Android API 사용하기 {#UsingAndroidAPI}
 
 Android API를 사용하려면 다음 절차를 따릅니다.
 
@@ -49,7 +49,7 @@ dependencies {
 <p>API에 대한 자세한 설명은 <a href="http://naver.github.io/naverspeech-sdk-android/">http://naver.github.io/naverspeech-sdk-android</a>를 참고합니다. </p>
 </div>
 
-## iOS API 사용하기 {#UsingiOSAPI}
+### iOS API 사용하기 {#UsingiOSAPI}
 
 iOS API를 사용하려면 다음 절차를 따릅니다.
 
