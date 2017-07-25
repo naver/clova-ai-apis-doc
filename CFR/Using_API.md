@@ -1,6 +1,6 @@
 ## CFR API 사용하기 {#UsingAPI}
 
-CFR API는 REST API이며, 얼굴 인식을 수행할 이미지 데이터를 HTTP 통신으로 음성 합성 서버로 전달하면 됩니다. 음성 합성 서버가 제공하는 REST API의 URI는 다음과 같으며 POST 방식으로 연결을 시도해야 합니다.
+CFR API는 REST API이며, 얼굴 인식을 수행할 이미지 데이터를 HTTP 통신으로 음성 합성 서버에 전달하면 됩니다. 음성 합성 서버가 제공하는 REST API의 URI는 다음과 같으며 POST 방식으로 연결을 시도해야 합니다.
 
 ```
 // 유명인 얼굴 인식 API
