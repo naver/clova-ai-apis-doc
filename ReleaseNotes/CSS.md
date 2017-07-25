@@ -1,5 +1,4 @@
 # CSS API 릴리즈 노트
-이 페이지는 CSS API의 릴리즈 노트를 제공합니다.
 
 ## 2017-07-19 - v1
 ### Added/Updated
