@@ -11,11 +11,11 @@ Android API를 사용하려면 다음 절차를 따릅니다.
 <ol>
   <li>다음 구문을 <code>app/build.gradle</code> 파일에 추가합니다.
   <pre><code>repositories {
-      jcenter()
-  }
-  dependencies {
-      compile 'com.naver.speech.clientapi:naverspeech-sdk-android:1.1.1'
-  }</code></pre>
+    jcenter()
+}
+dependencies {
+    compile 'com.naver.speech.clientapi:naverspeech-sdk-android:1.1.1'
+}</code></pre>
   </li>
   <li>다음과 같이 Android Manifest 파일(AndroidManifest.xml)을 설정합니다.
     <ul>
@@ -23,8 +23,8 @@ Android API를 사용하려면 다음 절차를 따릅니다.
       <li>권한 설정 : 사용자의 음성 입력을 마이크를 통해 녹음해야 하고 녹음된 데이터를 서버로 전송해야 합니다. 따라서, <code>android.permission.INTERNET</code>와 <code>android.permission.RECORD_AUDIO</code>에 대한 권한이 반드시 필요합니다.</li>
     </ul>
   <pre><code>&lt;manifest xmlns:android="http://schemas.android.com/apk/res/android"
-   package="com.naver.naverspeech.client"
-   android:versionCode="1" android:versionName="1.0" &gt;
+          package="com.naver.naverspeech.client"
+          android:versionCode="1" android:versionName="1.0" &gt;
 &lt;uses-permission android:name="android.permission.INTERNET" /&gt;
 &lt;uses-permission android:name="android.permission.RECORD_AUDIO" /&gt;
 &lt;uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /&gt;
@@ -58,9 +58,9 @@ iOS API를 사용하려면 다음 절차를 따릅니다.
 <ol>
   <li><a href="https://github.com/naver/naverspeech-sdk-ios">iOS용 예제</a>를 clone하거나 Zip 파일로 다운로드하여 압축을 해제합니다.
   <pre><code>git clone https://github.com/naver/naverspeech-sdk-ios.git
-  또는
-  wget https://github.com/naver/naverspeech-sdk-ios/archive/master.zip
-  unzip master.zip</code></pre>
+또는
+wget https://github.com/naver/naverspeech-sdk-ios/archive/master.zip
+unzip master.zip</code></pre>
   </li>
   <li>iOS 예제에서 <code>framework/NaverSpeech.framework</code> 디렉터리를 개발하는 앱의 <strong>Embedded Binaries</strong>에 추가합니다.</li>
   <li>다음과 같이 iOS Bundle Identifier를 설정합니다.
