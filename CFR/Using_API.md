@@ -11,7 +11,7 @@ https://openapi.naver.com/v1/vision/face
 ```
 
 
-HTTP 요청으로 얼굴 인식을 요청할 때 [사전 준비사항](#Preparation)에서 발급받은 **Client ID**와 **Client Secret** 정보를 헤더에 포함시켜야 합니다. 또한 요청을 *multipart* 형식으로 보내야 하며, 메시지의 이름은 **image**여야 합니다. 다음은 유명인 얼굴 인식 API를 호출할 때 보내는 HTTP 요청 메시지 예입니다.
+HTTP 요청으로 얼굴 인식을 요청할 때 [사전 준비사항](#Preparation)에서 발급받은 **Client ID**와 **Client Secret** 정보를 헤더에 포함시켜야 합니다. 또한 요청을 *multipart* 형식으로 보내야 하며, 메시지의 이름은 `image`여야 합니다. 다음은 유명인 얼굴 인식 API를 호출할 때 보내는 HTTP 요청 메시지 예입니다.
 
 ```
 [HTTP Request Header]
@@ -30,7 +30,7 @@ Content-Type: image/jpeg
 --{boundary-text}--
 ```
 
-HTTP 요청을 통해 보내는 이미지의 포맷에 대한 제약은 없습니다. 다만 *GIF와 같은 이미지 포맷은 첫 번째 프레임의 이미지*를 기준으로 얼굴 인식을 수행합니다.
+HTTP 요청을 통해 보내는 이미지의 포맷에 대한 제약은 없습니다. 다만, **GIF와 같은 이미지 포맷은 첫 번째 프레임의 이미지**를 기준으로 얼굴 인식을 수행합니다.
 
 <div class="note">
   <p><strong>Note!</strong></p>

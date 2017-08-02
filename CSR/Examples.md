@@ -10,7 +10,7 @@
 * CSR API - Android용 예제
 * 예제 코드 저장소 : https://github.com/naver/naverspeech-sdk-android
 * 설명
-  * [Main Activity](https://github.com/naver/naverspeech-sdk-android/blob/master/samples/EPDTypeAutoSample/app/src/main/java/com/naver/naverspeech/client/MainActivity.java) 클래스 : *SpeechRecognitionListener*를 초기화하고, 이후 이벤트를 handleMessage 에서 받아 처리합니다.
+  * [Main Activity](https://github.com/naver/naverspeech-sdk-android/blob/master/samples/EPDTypeAutoSample/app/src/main/java/com/naver/naverspeech/client/MainActivity.java) 클래스 : `SpeechRecognitionListener`를 초기화하고, 이후 이벤트를 handleMessage 에서 받아 처리합니다.
   * [SpeechRecognitionListener를 상속한 클래스](https://github.com/naver/naverspeech-sdk-android/blob/master/samples/EPDTypeAutoSample/app/src/main/java/com/naver/naverspeech/client/NaverRecognizer.java) : 음성인식 서버 연결,  음성전달, 인식결과 발생등의 이벤트에 따른 결과 처리 방법 정의합니다.
 
 ```java

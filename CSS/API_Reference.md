@@ -47,10 +47,10 @@ CSS API가 발생시킬 수 있는 오류 코드는 다음과 같습니다.
 
 | 오류 코드 | HTTP 응답 코드 | 오류 메시지                         | 설명                                                   |
 |---------|-------------|-----------------------------------|-------------------------------------------------------|
-| VS01    | 400         | speaker parameter is needed.      | speaker 파라미터가 누락되었습니다.                           |
-| VS02    | 400         | Unsupported speaker.              | speaker 파라미터에 지원하지 않는 값이 입력된 경우 발생합니다.      |
-| VS03    | 400         | speed parameter is needed.        | speed 파라미터가 누락되었습니다.                             |
-| VS04    | 400         | Unsupported speed.                | speed 파라미터에 지원하지 않는 값이 입력된 경우 발생합니다.        |
-| VS05    | 400         | text parameter is needed.         | text 파라미터가 누락되었습니다.                              |
-| VS06    | 400         | text parameter exceeds max length. | text 파라미터에 입력할 수 있는 최대 글자 수를 초과했습니다.                |
-| VS99    | 500         | Internal server error             | 서버 내부 오류가 발생했습니다. 포럼에 문의하시면 신속히 조치하겠습니다. |
+| `VS01`    | 400         | speaker parameter is needed.      | speaker 파라미터가 누락되었습니다.                           |
+| `VS02`    | 400         | Unsupported speaker.              | speaker 파라미터에 지원하지 않는 값이 입력된 경우 발생합니다.      |
+| `VS03`    | 400         | speed parameter is needed.        | speed 파라미터가 누락되었습니다.                             |
+| `VS04`    | 400         | Unsupported speed.                | speed 파라미터에 지원하지 않는 값이 입력된 경우 발생합니다.        |
+| `VS05`    | 400         | text parameter is needed.         | text 파라미터가 누락되었습니다.                              |
+| `VS06`    | 400         | text parameter exceeds max length. | text 파라미터에 입력할 수 있는 최대 글자 수를 초과했습니다.                |
+| `VS99`    | 500         | Internal server error             | 서버 내부 오류가 발생했습니다. 포럼에 문의하시면 신속히 조치하겠습니다. |

@@ -53,3 +53,16 @@
 .book-summary ul.summary {
     margin-bottom: 2em;
 }
+
+.markdown-section code {
+    padding: 1px;
+    margin: 0;
+    font-size: .85em;
+    color: lightcoral;
+    background-color: #f7f7f7;
+    border-width: thin;
+}
+
+.markdown-section pre>code {
+    color: #333333;
+}
