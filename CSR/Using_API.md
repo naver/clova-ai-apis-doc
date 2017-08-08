@@ -19,7 +19,7 @@ dependencies {
   </li>
   <li>다음과 같이 Android Manifest 파일(AndroidManifest.xml)을 설정합니다.
     <ul>
-      <li>패키지 이름 : <code>manifest</code> 요소의 <code>package</code> 속성 값이 <a href="Preparation">사전 준비사항</a>에서 등록한 <strong>안드로이드 앱 패키지 이름</strong>과 같아야 합니다.</li>
+      <li>패키지 이름 : <code>manifest</code> 요소의 <code>package</code> 속성 값이 <a href="#Preparation">사전 준비사항</a>에서 등록한 <strong>안드로이드 앱 패키지 이름</strong>과 같아야 합니다.</li>
       <li>권한 설정 : 사용자의 음성 입력을 마이크를 통해 녹음해야 하고 녹음된 데이터를 서버로 전송해야 합니다. 따라서, <code>android.permission.INTERNET</code>와 <code>android.permission.RECORD_AUDIO</code>에 대한 권한이 반드시 필요합니다.</li>
     </ul>
   <pre><code>&lt;manifest xmlns:android="http://schemas.android.com/apk/res/android"
