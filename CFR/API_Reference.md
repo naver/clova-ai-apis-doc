@@ -145,7 +145,7 @@ Content-Type: image/jpeg
 | `faces[].landmark.leftMouth`  | [place object](#placeObject) | 왼쪽 입 꼬리의 위치           |
 | `faces[].landmark.rightMouth` | [place object](#placeObject) | 오른 쪽 입 꼬리의 위치        |
 | `faces[].gender`              | object       | 감지된 얼굴의 성별을 추정한 정보를 가지는 객체                |
-| `faces[].gender.value`        | string       | 인식된 성별. **"male"** 또는 **"female"** 값을 가집니다.          |
+| `faces[].gender.value`        | string       | 인식된 성별. `"male"` 또는 `"female"` 값을 가집니다.          |
 | `faces[].gender.confidence`   | number       | 인식된 성별을 확신하는 정도. **0에서 1사이의 실수**로 표현됩니다. 1에 가까울수록 높은 확신을 나타냅니다. |
 | `faces[].age`                 | object       | 감지된 얼굴의 나이를 추정한 정보를 가지는 객체                |
 | `faces[].age.value`           | string       | 인식된 나이. "22~26"와 같이 나이의 범위가 표현된 문자열입니다.  |
