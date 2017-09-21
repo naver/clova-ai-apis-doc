@@ -144,8 +144,8 @@ var client_secret = 'YOUR_CLIENT_SECRET';
 var fs = require('fs');
 app.get('/face', function (req, res) {
    var request = require('request');
-   var api_url = 'https://dev.openapi.naver.com/v1/vision/celebrity'; // 유명인 인식
-   //var api_url = 'https://dev.openapi.naver.com/v1/vision/face'; // 얼굴 감지
+   var api_url = 'https://openapi.naver.com/v1/vision/celebrity'; // 유명인 인식
+   //var api_url = 'https://openapi.naver.com/v1/vision/face'; // 얼굴 감지
 
    var _formData = {
      image:'image',
