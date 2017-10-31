@@ -207,7 +207,7 @@ Content-Type: image/jpeg
      "confidence": 0.742265
    },
    "emotion": {
-     "value": "simile",
+     "value": "smile",
      "confidence": 0.460465
    },
    "pose": {
