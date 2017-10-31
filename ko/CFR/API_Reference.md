@@ -151,7 +151,7 @@ Content-Type: image/jpeg
 | `faces[].age.value`           | string       | 인식된 나이. "22~26"와 같이 나이의 범위가 표현된 문자열입니다.  |
 | `faces[].age.confidence`      | number       | 인식된 나이를 확신하는 정도. **0에서 1사이의 실수**로 표현됩니다. 1에 가까울수록 높은 확신을 나타냅니다. |
 | `faces[].emotion`             | object       | 감지된 얼굴의 감정을 추천한 정보를 가지는 객체                |
-| `faces[].emotion.value`       | string       | 인식된 감정. "smile"과 같이 얼굴의 표정이나 감정을 나타내는 문자열입니다. 다음과 같은 값을 가집니다. <ul><li>angry</li><li>disgust</li><li>fear</li><li>laugh</li><li>neutral</li><li>sad</li><li>suprise</li><li>smile</li><li>talking</li></ul> |
+| `faces[].emotion.value`       | string       | 인식된 감정. "smile"과 같이 얼굴의 표정이나 감정을 나타내는 문자열입니다. 다음과 같은 값을 가집니다. <ul><li>angry</li><li>disgust</li><li>fear</li><li>laugh</li><li>neutral</li><li>sad</li><li>surprise</li><li>smile</li><li>talking</li></ul> |
 | `faces[].emotion.confidence`  | number       | 인식된 감정을 확신하는 정도. **0에서 1사이의 실수**로 표현됩니다. 1에 가까울수록 높은 확신을 나타냅니다. |
 | `faces[].pose`                | object       | 감지된 얼굴이 어떤 포즈인지 추정한 정보를 가지는 객체           |
 | `faces[].pose.value`          | string       | 인식된 얼굴의 포즈. "frontal_face"와 같이 얼굴의 방향을 나타내는 문자열입니다. 다음과 같은 값을 가집니다. <ul><li>part_face</li><li>false_face</li><li>sunglasses</li><li>frontal_face</li><li>left_face</li><li>right_face</li><li>rotate_face</li></ul> |
