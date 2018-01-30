@@ -1,11 +1,11 @@
 # Clova Face Recognition API 가이드
 
-{% include "./Overview.md" %}
+{% include "/CFR/Overview.md" %}
 
-{% include "./Preparation.md" %}
+{% include "/CFR/Preparation.md" %}
 
-{% include "./Using_API.md" %}
+{% include "/CFR/Using_API.md" %}
 
-{% include "./API_Reference.md" %}
+{% include "/CFR/API_Reference.md" %}
 
-{% include "./Examples.md" %}
+{% include "/CFR/Examples.md" %}

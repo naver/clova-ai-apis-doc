@@ -1,11 +1,11 @@
 # Clova Speech Synthesis API 가이드
 
-{% include "./Overview.md" %}
+{% include "/CSS/Overview.md" %}
 
-{% include "./Preparation.md" %}
+{% include "/CSS/Preparation.md" %}
 
-{% include "./Using_API.md" %}
+{% include "/CSS/Using_API.md" %}
 
-{% include "./API_Reference.md" %}
+{% include "/CSS/API_Reference.md" %}
 
-{% include "./Examples.md" %}
+{% include "/CSS/Examples.md" %}
