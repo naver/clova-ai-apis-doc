@@ -12,23 +12,6 @@
   * [Android 예제](/CSR/API_Guide.md#AndroidExample)
   * [iOS 예제](/CSR/API_Guide.md#iOSExample)
 
-## Clova Speech Synthesis
-* [CSS API란?](/CSS/API_Guide.md#Overview)
-* [사전 준비사항](/CSS/API_Guide.md#Preparation)
-* [CSS API 사용하기](/CSS/API_Guide.md#UsingAPI)
-* [CSS API 레퍼런스](/CSS/API_Guide.md#APIReference)
-  * [기본 정보](/CSS/API_Guide.md#BasicInfo)
-  * [요청 파라미터](/CSS/API_Guide.md#RequestParameter)
-  * [응답](/CSS/API_Guide.md#Response)
-  * [오류 코드](/CSS/API_Guide.md#ErrorCode)
-* [구현 예제](/CSS/API_Guide.md#Examples)
-  * [Java](/CSS/API_Guide.md#Java)
-  * [PHP](/CSS/API_Guide.md#PHP)
-  * [Node.js](/CSS/API_Guide.md#Nodejs)
-  * [Python](/CSS/API_Guide.md#Python)
-  * [C#](/CSS/API_Guide.md#Csharp)
-  * [cURL](/CSS/API_Guide.md#cURL)
-
 ## Clova Face Recognition
 * [CFR API란?](/CFR/API_Guide.md#Overview)
 * [사전 준비사항](/CFR/API_Guide.md#Preparation)

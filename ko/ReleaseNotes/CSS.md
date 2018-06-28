@@ -1,5 +1,9 @@
 # CSS API 릴리즈 노트
 
+## 2018-07-02
+
+CSS API 제공 중단.
+
 ## 2017-07-19 - v1
 ### Added/Updated
 * 음성 합성을 지원하는 텍스트의 크기를 4KB에서 5000자로 확장했습니다. ([text 파라미터](/CSS/API_Guide.md#RequestParameter))

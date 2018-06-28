@@ -3,7 +3,7 @@
 Clova A.I. APIs의 변경 이력은 다음 페이지를 참고합니다.
 
 * [Clova Speech Recognition API release notes](/ReleaseNotes/CSR.md)
-* [Clova Speech Synthesis API release notes](/ReleaseNotes/CSS.md)
+* Clova Speech Synthesis API release notes(서비스 종료)
 * [Clova Face Recognition API release notes](/ReleaseNotes/CFR.md)
 
 <div class="danger">
