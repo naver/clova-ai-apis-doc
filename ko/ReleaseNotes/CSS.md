@@ -20,7 +20,7 @@ CSS API 제공 중단.
 
 ## 2016-01-26 - v1
 ### Added/Updated
-* CSR API 정식 배포
+* CSS API 정식 배포
 
 ### Fixed
 

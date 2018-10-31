@@ -1,17 +1,5 @@
 # Summary
 
-## Clova Speech Recognition
-* [CSR API란?](/CSR/API_Guide.md#Overivew)
-* [사전 준비사항](/CSR/API_Guide.md#Preparation)
-* [CSR API 사용하기](/CSR/API_Guide.md#UsingAPI)
-  * [Android API 사용하기](/CSR/API_Guide.md#UsingAndroidAPI)
-  * [iOS API 사용하기](/CSR/API_Guide.md#UsingiOSAPI)
-* [UX 고려사항](/CSR/API_Guide.md#UXGuideline)
-* [오류 처리](/CSR/API_Guide.md#HandleError)
-* [구현 예제](/CSR/API_Guide.md#Examples)
-  * [Android 예제](/CSR/API_Guide.md#AndroidExample)
-  * [iOS 예제](/CSR/API_Guide.md#iOSExample)
-
 ## Clova Face Recognition
 * [CFR API란?](/CFR/API_Guide.md#Overview)
 * [사전 준비사항](/CFR/API_Guide.md#Preparation)
